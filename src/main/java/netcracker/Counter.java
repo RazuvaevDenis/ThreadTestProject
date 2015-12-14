@@ -26,7 +26,8 @@ public class Counter implements Runnable {
     public void run() {
         for(int i=0; i<tmp.length;i++){
             summ+=tmp[i];
+            log.log(Level.INFO,"Thread "+num+" consider part of sum");
         }
-        log.log(Level.INFO,"Thread " + num + " count summ");
+        log.log(Level.INFO,"Thread " + num + " consider all summ");
     }
 }

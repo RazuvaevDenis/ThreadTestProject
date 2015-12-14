@@ -58,12 +58,12 @@ public class Test {
             CountArraySumm(counters);
             summ=CountSumm(counters);
             log.log(Level.INFO,"Summa = " + summ);
+            log.log(Level.INFO,"------------------------");
+            log.log(Level.INFO,"Count start = " + m.getCount());
+            AccountWork(accounts);
         } catch (InterruptedException e) {
             log.log(Level.INFO,"Exception. For more details - file 'error.log'");
             log.log(Level.ERROR,"Error - interrupted exception ",e);
         }
-        log.log(Level.INFO,"------------------------");
-        log.log(Level.INFO,"Count start = " + m.getCount());
-        AccountWork(accounts);
     }
 }
