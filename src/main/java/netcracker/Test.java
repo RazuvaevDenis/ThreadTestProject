@@ -11,8 +11,8 @@ import java.util.concurrent.locks.ReentrantLock;
  */
 public class Test {
 
-    private static int N = 3;
-    private final static Logger log=Logger.getLogger(Test.class.getName());
+    private static final int N = 3;
+    private static final Logger log=Logger.getLogger(Test.class.getName());
     public static void CountArraySumm(Counter[] counters) throws InterruptedException {
         Thread[] threads=new Thread[counters.length];
         for(int i=0; i<counters.length; i++){
